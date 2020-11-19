@@ -31,7 +31,7 @@ function App() {
       redirect: 'follow'
     };
 
-    fetch("http://127.0.0.1:5000/api/v1.0/predict", requestOptions)
+    fetch("https://enigmatic-cove-22949.herokuapp.com/api/v1.0/predict", requestOptions)
       .then(response => response.text())
       .then(result => setResult(JSON.parse(result)))
       .catch(error => console.log('error', error));
